@@ -979,8 +979,10 @@ nav .languages,
 
     .collection-block {
         padding-right: 15px;
-        overflow-x: auto;
-        gap: 87px;
+        /* overflow-x: auto; */
+        /* gap: 87px; */
+        display: flex;
+        justify-content: center;
     }
 
     .collection-item p {
@@ -997,12 +999,14 @@ nav .languages,
     }
 
     .collection-item {
+        display: none;
         opacity: .5;
         transition: .3s;
 
     }
 
     .collection-item.active {
+        display: flex;
         opacity: 1;
     }
 
